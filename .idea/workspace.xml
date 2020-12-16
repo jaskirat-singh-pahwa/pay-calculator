@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50a5ab80-078c-40aa-a4c7-5653cb3f4978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gurukul/paycalculator/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gurukul/paycalculator/MoneyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gurukul/paycalculator/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -79,7 +76,7 @@
       <recent name="com.gurukul.paycalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MoneyTest">
+  <component name="RunManager" selected="Gradle.PayTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gurukul.paycalculator.Main" />
       <module name="pay-calculator.main" />
@@ -113,8 +110,29 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.gurukul.paycalculator.PayTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PayTest" />
         <item itemvalue="Gradle.MoneyTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -154,21 +172,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1868" height="291" key="GridCell.Tab.0.bottom" timestamp="1608117034473">
+    <state width="1868" height="291" key="GridCell.Tab.0.bottom" timestamp="1608117891262">
       <screen x="1680" y="101" width="1920" height="1080" />
     </state>
-    <state width="1868" height="291" key="GridCell.Tab.0.bottom/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117034473" />
-    <state width="1868" height="291" key="GridCell.Tab.0.center" timestamp="1608117034470">
+    <state width="1868" height="291" key="GridCell.Tab.0.bottom/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117891262" />
+    <state width="1868" height="291" key="GridCell.Tab.0.center" timestamp="1608117891260">
       <screen x="1680" y="101" width="1920" height="1080" />
     </state>
-    <state width="1868" height="291" key="GridCell.Tab.0.center/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117034470" />
-    <state width="1868" height="291" key="GridCell.Tab.0.left" timestamp="1608117034469">
+    <state width="1868" height="291" key="GridCell.Tab.0.center/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117891260" />
+    <state width="1868" height="291" key="GridCell.Tab.0.left" timestamp="1608117891258">
       <screen x="1680" y="101" width="1920" height="1080" />
     </state>
-    <state width="1868" height="291" key="GridCell.Tab.0.left/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117034469" />
-    <state width="1868" height="291" key="GridCell.Tab.0.right" timestamp="1608117034472">
+    <state width="1868" height="291" key="GridCell.Tab.0.left/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117891258" />
+    <state width="1868" height="291" key="GridCell.Tab.0.right" timestamp="1608117891261">
       <screen x="1680" y="101" width="1920" height="1080" />
     </state>
-    <state width="1868" height="291" key="GridCell.Tab.0.right/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117034472" />
+    <state width="1868" height="291" key="GridCell.Tab.0.right/1680.101.1920.1080/0.0.1680.1050@1680.101.1920.1080" timestamp="1608117891261" />
   </component>
 </project>

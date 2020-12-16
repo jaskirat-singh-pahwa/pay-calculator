@@ -2,6 +2,7 @@ package com.gurukul.paycalculator;
 
 import java.math.BigDecimal;
 
+
 public class Pay {
     final private int precision = 2;
     final private Money minimumBaseSalary = new Money("8.00", precision);
