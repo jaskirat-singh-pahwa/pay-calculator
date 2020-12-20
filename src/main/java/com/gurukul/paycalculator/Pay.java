@@ -40,17 +40,13 @@ public class Pay {
         }
 
         int overtimeHours = this.hoursWorked - normalPayHoursLimit;
-        System.out.println("Overtime hours: " + overtimeHours);
 
         Money normalPay = this.basePay.multiply(String.valueOf(normalPayHoursLimit));
-        System.out.println("Normal pay: " + normalPay.getAmount());
 
         String overtimeFactor = "1.50";
         Money overtimePay = this.basePay.multiply(overtimeFactor);
-        System.out.println("Overtime pay: " + overtimePay.getAmount());
 
         Money overtime = overtimePay.multiply(String.valueOf(overtimeHours));
-        System.out.println("Overtime: " + overtime.getAmount());
 
         return normalPay.add(overtime.getAmount().toString()).getAmount();
     }

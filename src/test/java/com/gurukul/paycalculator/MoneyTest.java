@@ -45,7 +45,7 @@ public class MoneyTest {
     }
 
     @Test
-    public void itShouldReturnAddedResult() {
+    public void itShouldReturnAddedResultForThreeNumbers() {
         Money number1 = new Money("3.53", 2);
         Money number2 = new Money("2.01", 2);
         Money sum1 = number1.add(number2.getAmount().toString());

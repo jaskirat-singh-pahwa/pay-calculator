@@ -11,7 +11,6 @@ public class PayTest {
         Pay pay = new Pay(0, "8.00");
 
         assertEquals(pay.getPay(), new BigDecimal("0.00"));
-
     }
 
     @Test
@@ -19,7 +18,6 @@ public class PayTest {
         Pay pay = new Pay(1, "8.00");
 
         assertEquals(pay.getPay(), new BigDecimal("8.00"));
-
     }
 
     @Test
