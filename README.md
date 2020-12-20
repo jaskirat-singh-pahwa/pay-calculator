@@ -13,9 +13,9 @@ Write a method that takes the base pay and hours worked as parameters, and print
             
             Employee 1      $7.50       35
             Employee 2      $8.20       47
-            Employee 3      $10.00      73 
-
-
+            Employee 3      $10.00      73
+            
+            
 #### Test Cases
 1.) ~~It should return 0$ as Total Pay when Hours Worked is 0.~~
 
