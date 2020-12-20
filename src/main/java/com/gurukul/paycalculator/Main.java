@@ -1,6 +1,5 @@
 package com.gurukul.paycalculator;
 
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -16,9 +15,14 @@ public class Main {
         wages.add(new Pay(41, "11.0"));
         wages.add(new Pay(61, "10"));
 
+        List<String[]> employeePays = new ArrayList<>();
+
         for(Pay wage : wages) {
+           employeePays.add(new String[]{"EmployeeId", wage.getPay().toString()});
             System.out.println(wage.getPay());
-            System.out.println("\n");
         }
+
+        Writer writer = new Writer("/Users/jaskiratsinghp/Desktop/outputPayCalculator.csv");
+        writer.addDataToCsv(employeePays);
     }
 }

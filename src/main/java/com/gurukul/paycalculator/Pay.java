@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 public class Pay {
     final private int precision = 2;
     final private Money minimumBaseSalary = new Money("8.00", precision);
-
+    final private int maxWorkingHoursAllowed = 60;
     private int hoursWorked;
     private Money basePay;
 
@@ -19,14 +19,13 @@ public class Pay {
         return this.basePay.isLessThan(minimumBaseSalary);
     }
 
-    public boolean isHoursWorkedMoreThanMaxWorkingHoursAllowed(int hoursWorked) {
-        int maxWorkingHoursAllowed = 60;
-        return hoursWorked > maxWorkingHoursAllowed;
+    public boolean isHoursWorkedMoreThanMaxWorkingHoursAllowed() {
+        return this.hoursWorked > maxWorkingHoursAllowed;
     }
 
     public BigDecimal getPay() {
 
-        if (isHoursWorkedMoreThanMaxWorkingHoursAllowed(this.hoursWorked)) {
+        if (isHoursWorkedMoreThanMaxWorkingHoursAllowed()) {
             return new BigDecimal("-1.00");
         }
 
