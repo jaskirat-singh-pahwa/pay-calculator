@@ -22,7 +22,7 @@ public class Main {
             System.out.println(wage.getPay());
         }
 
-        Writer writer = new Writer("/Users/jaskiratsinghp/Desktop/outputPayCalculator.csv");
-        writer.addDataToCsv(employeePays);
+//        Writer writer = new Writer("/Users/jaskiratsinghp/Desktop/outputPayCalculator.csv");
+//        writer.addDataToCsv(employeePays);
     }
 }

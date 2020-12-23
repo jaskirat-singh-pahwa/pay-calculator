@@ -7,6 +7,8 @@ public class Pay {
     final private int precision = 2;
     final private Money minimumBaseSalary = new Money("8.00", precision);
     final private int maxWorkingHoursAllowed = 60;
+    final private int normalPayHoursLimit = 40;
+    final private String overtimeFactor = "1.50";
     private int hoursWorked;
     private Money basePay;
 
@@ -23,30 +25,30 @@ public class Pay {
         return this.hoursWorked > maxWorkingHoursAllowed;
     }
 
+    public int getOvertimeHours() {
+        return this.hoursWorked - normalPayHoursLimit;
+    }
+
+    public boolean checkIfAllConditionsSatisfied() {
+        return !isHoursWorkedMoreThanMaxWorkingHoursAllowed() && !isBasePayLessThanMinimumBaseSalary();
+    }
+
     public BigDecimal getPay() {
 
-        if (isHoursWorkedMoreThanMaxWorkingHoursAllowed()) {
+        if (!checkIfAllConditionsSatisfied()) {
             return new BigDecimal("-1.00");
         }
 
-        if (isBasePayLessThanMinimumBaseSalary()) {
-            return new BigDecimal("-1.00");
-        }
+        int overtimeHours = getOvertimeHours();
+        if(overtimeHours > 0) {
+            Money normalPay = this.basePay.multiply(String.valueOf(normalPayHoursLimit));
+            Money overtimePay = this.basePay.multiply(overtimeFactor);
+            Money overtime = overtimePay.multiply(String.valueOf(overtimeHours));
 
-        int normalPayHoursLimit = 40;
-        if (this.hoursWorked <= normalPayHoursLimit) {
+            return normalPay.add(overtime.getAmount().toString()).getAmount();
+        }
+        else {
             return this.basePay.multiply(String.valueOf(this.hoursWorked)).getAmount();
         }
-
-        int overtimeHours = this.hoursWorked - normalPayHoursLimit;
-
-        Money normalPay = this.basePay.multiply(String.valueOf(normalPayHoursLimit));
-
-        String overtimeFactor = "1.50";
-        Money overtimePay = this.basePay.multiply(overtimeFactor);
-
-        Money overtime = overtimePay.multiply(String.valueOf(overtimeHours));
-
-        return normalPay.add(overtime.getAmount().toString()).getAmount();
     }
 }
