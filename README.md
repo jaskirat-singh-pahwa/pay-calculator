@@ -33,3 +33,4 @@ Write a method that takes the base pay and hours worked as parameters, and print
 7.) ~~It should print error or throw exception when the Hours Worked is more than 60.~~
 
 8.) ~~Fix Money class, make it more readable and Single Responsibility please.~~
+    
